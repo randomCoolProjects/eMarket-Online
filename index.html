@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!--End Bootstrap-->
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Mercado Register - Web Edition</title>
+</head>
+
+<body>
+    <div class="menubar">
+        <span class="title">eMarket Online</span>&nbsp;&nbsp;&nbsp;
+        <a href="index.html">Home</a> | <a href="register.html">Adicionar / Remover / Gerenciar produtos</a>
+    </div>
+    <div class="left">
+        <div id="list" class="list">
+            <!--div class="product-list">Produto<div class="float-right">&nbsp;R$ 12,99&nbsp;<span>X</span></div></div-->
+        </div>
+        <input id="item-name" type="text" style="width: 85%"><button style="width: 15%;" id="add">Adicionar</button>
+    </div>
+    <div class="right">
+        <h4>Total: R$ <span id="total">0,00</span></h4>
+        <div style="min-width: 100%;">
+            Valor recebido: <input id="recived" type="number" placeholder="20,00" style="float: right; width: calc(100% - 120px);"><br>
+            Troco: R$ <span id="change">-,--</span>
+            <button style="width: 100%;" id="finish">Finalizar compra e gerar NF</button>
+            <button style="width: 100%;" onclick='location.reload();'>Iniciar nova compra</button>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+<script src="js/list.js"></script>
+</html>

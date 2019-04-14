@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Bootstrap-->
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!--End Bootstrap-->
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Registar | Mercado Register - Web Edition</title>
+</head>
+<body>
+    <div class="menubar">
+        <span class="title">eMarket Online</span>&nbsp;&nbsp;&nbsp;
+        <a href="index.html">Home</a> | <a href="register.html">Adicionar / Remover / Gerenciar produtos</a> 
+    </div>
+    <div class="left form">
+        <span>Item:&nbsp;</span>        <input id="item" type="text" placeholder="Banana"><br>
+        <span>Descrição:&nbsp;</span>   <input id="description" type="text" placeholder="Uma fruta" aria-multiline="true"><br>
+        <span>Preço:&nbsp;</span>       <input id="price" type="number" placeholder="3,99"><br>
+        <span>Categoria:&nbsp;</span>   <input id="category" type="text" placeholder="Frutas"><br>
+        <button class="submit">Registrar produto</button>
+        <button class="directview">Consulta direta</button>
+        <button class="clear">Apagar todos os produtos</button>
+    </div>
+    <div class="right" style="overflow-y: auto;">
+
+    </div>
+</body>
+<script src="js/main.js"></script>
+<script src="js/register.js"></script>
+</html>
